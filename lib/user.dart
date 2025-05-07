@@ -3,10 +3,6 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'user.g.dart';
 
-DateTime _dateTimeFromTimestamp(Timestamp timestamp) => timestamp.toDate();
-Timestamp _dateTimeToTimestamp(DateTime dateTime) =>
-    Timestamp.fromDate(dateTime);
-
 @JsonSerializable(
   explicitToJson: true,
   includeIfNull: false,
